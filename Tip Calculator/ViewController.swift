@@ -10,11 +10,53 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // MARK: Properties
+    @IBOutlet weak var totalBill: UITextField!
+    //Tip calculation
+    
+    @IBOutlet weak var tipAmount: UITextField!
+
+    @IBOutlet weak var people: UITextField!
+
+    
+//    let tipDivide:Double = Double(tipAmount/100)
+    
+//    let tip = totalBill/tipDivide
+
+    
+    // MARK: Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    
+    
+    
+    @IBAction func calculate(_ sender: Any) {
+       // Get values
+        let cost = totalBill.text!
+        let bill = Double(cost)!
+        
+        
+        let tipVar = tipAmount.text!
+        let tip = Int(tipVar)!
+        
+        
+        let totalPeople = people.text!
+        let amountOfPeople = Int(totalPeople)!
+        
+        
+        
+        
+    }
+    
 }
+   
+
+
+
+
+
+
 
