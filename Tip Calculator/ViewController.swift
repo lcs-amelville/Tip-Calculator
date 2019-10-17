@@ -39,14 +39,15 @@ class ViewController: UIViewController {
         let bill = Double(cost)!
         
         
-        let tipVar = tipAmount.text!
-        let tip = Int(tipVar)!
+        let tipAmountAsString = tipAmount.text!
+        let tipAmountAsPercentage = Double(tipAmountAsString)!
         
         
         let totalPeople = people.text!
         let amountOfPeople = Int(totalPeople)!
         
-        
+        let tipAsDouble = tipAmountAsPercentage/100
+        let totalTipInDollars = bill*tipAsDouble
         
         
     }
