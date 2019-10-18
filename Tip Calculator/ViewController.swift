@@ -18,8 +18,12 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var people: UITextField!
 
+    @IBOutlet weak var totalTip: UILabel!
     
-//    let tipDivide:Double = Double(tipAmount/100)
+    @IBOutlet weak var lableTipPerPerson: UILabel!
+    
+    
+    //    let tipDivide:Double = Double(tipAmount/100)
     
 //    let tip = totalBill/tipDivide
 
@@ -44,15 +48,25 @@ class ViewController: UIViewController {
         
         
         let totalPeople = people.text!
-        let amountOfPeople = Int(totalPeople)!
+        let amountOfPeople = Double(totalPeople)!
         
         let tipAsDouble = tipAmountAsPercentage/100
         let totalTipInDollars = bill*tipAsDouble
         
+        //Tip per person
+        let tipPerPerson = totalTipInDollars/amountOfPeople
+        
+        
+     totalTip.text = String(totalTipInDollars)
+        
+    lableTipPerPerson.text = String(tipPerPerson)
         
     }
-    
+    //How to get number back to labels ask in class I don't see a video on it and I forgot how to do it.
+   
+  
 }
+
    
 
 
