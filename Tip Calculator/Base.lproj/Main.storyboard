@@ -24,9 +24,6 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                <connections>
-                                    <action selector="tipAmount:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="3Vi-k0-eEa"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Total Bill" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tRF-Y9-KKJ">
                                 <rect key="frame" x="210" y="124" width="97" height="30"/>
@@ -34,9 +31,6 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                <connections>
-                                    <action selector="totalBill:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="y4T-No-FF3"/>
-                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Amount of Bill" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2yw-RV-jwk">
                                 <rect key="frame" x="26" y="121" width="138" height="37"/>
@@ -73,9 +67,6 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                <connections>
-                                    <action selector="people:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="wbI-4s-kcz"/>
-                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tip per Person" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mvi-AC-jyY">
                                 <rect key="frame" x="84" y="549" width="112" height="21"/>
@@ -103,13 +94,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="lableTipPerPerson" destination="Mvi-AC-jyY" id="yI5-x0-dg4"/>
+                        <outlet property="lableTipPerPerson" destination="8bC-Xf-vdC" id="nKx-uN-6dI"/>
                         <outlet property="people" destination="sMV-7s-aP9" id="aTi-P3-VU0"/>
                         <outlet property="tipAmount" destination="TxI-wr-4Ld" id="nla-Lq-rpo"/>
-                        <outlet property="tipPerPerson" destination="Mvi-AC-jyY" id="Rfj-di-1BA"/>
                         <outlet property="totalBill" destination="tRF-Y9-KKJ" id="hw3-6q-G8e"/>
                         <outlet property="totalTip" destination="Mvi-AC-jyY" id="8cb-vy-bBw"/>
-                        <outletCollection property="totalTip" destination="WWB-Kd-2aV" collectionClass="NSMutableArray" id="VeF-2F-YJk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
