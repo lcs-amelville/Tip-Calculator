@@ -18,8 +18,10 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var people: UITextField!
 
+    
     @IBOutlet weak var totalTip: UILabel!
     
+   
     @IBOutlet weak var lableTipPerPerson: UILabel!
     
     
@@ -66,7 +68,6 @@ class ViewController: UIViewController {
    
   
 }
-
    
 
 
