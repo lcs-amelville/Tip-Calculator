@@ -59,9 +59,12 @@ class ViewController: UIViewController {
         let tipPerPerson = totalTipInDollars/amountOfPeople
         
         
-     totalTip.text = String(totalTipInDollars)
-        
-    lableTipPerPerson.text = String(tipPerPerson)
+    // totalTip.text = String(totalTipInDollars)
+ //   totalTip.text = "$\(totalTipInDollars)"
+    
+    totalTip.text = String
+    //lableTipPerPerson.text = String(tipPerPerson)
+    lableTipPerPerson.text = "$\(tipPerPerson)"
         
     }
     //How to get number back to labels ask in class I don't see a video on it and I forgot how to do it.
